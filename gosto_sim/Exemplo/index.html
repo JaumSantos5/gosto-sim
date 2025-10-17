@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gosto Sim - Marmitas Saudáveis</title>
+    <style>
+        /* Reset e estilo básico */
+        * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+        body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Hero e imagens centrais */
+        img { max-width: 100%; display: block; margin: 20px auto; border-radius: 10px; }
+
+        /* Cabeçalho / Hero */
+        header { background-color: #d0f0c0; padding: 50px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; margin-bottom: 20px; }
+        .btn { background-color: #4CAF50; color: white; padding: 12px 25px; border-radius: 5px; font-weight: bold; display: inline-block; }
+
+        /* Seções */
+        section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+        h2 { text-align: center; margin-bottom: 30px; font-size: 2rem; color: #4CAF50; }
+
+        /* Cardápio */
+        .cardapio { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; justify-items: center; }
+        .item { background: white; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 100%; max-width: 300px; }
+        .item h3 { margin-bottom: 10px; color: #333; }
+        .item p { font-size: 0.95rem; margin-bottom: 5px; }
+
+        /* Sobre */
+        .sobre img { max-width: 600px; }
+
+        /* Depoimentos */
+        .depoimentos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 20px; justify-items: center; }
+        .depoimento { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); font-style: italic; max-width: 400px; text-align: center; }
+
+        /* Contato */
+        .contato p { text-align: center; margin-bottom: 10px; font-weight: bold; }
+
+        /* Rodapé */
+        footer { background-color: #4CAF50; color: white; text-align: center; padding: 20px; }
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <!-- Header -->
+<header>
+    <!-- Menu -->
+    <nav style="display:flex; justify-content:center; gap:30px; margin-bottom:30px;">
+        <a href="#" style="color:#333; font-weight:bold; font-size:1rem;">Home</a>
+        <a href="#cardapio" style="color:#333; font-weight:bold; font-size:1rem;">Cardápio</a>
+        <a href="#sobre" style="color:#333; font-weight:bold; font-size:1rem;">Sobre Nós</a>
+    </nav>
+
+    <!-- Título principal -->
+    <h1 style="font-family: 'Segoe Script', cursive; font-size:3rem; color:#2e7d32; margin-bottom:10px;">Gosto Sim</h1>
+    <p style="font-size:1.3rem; color:#4f4f4f; margin-bottom:25px;">Marmitas saudáveis e práticas elaboradas por nutricionista</p>
+
+    <!-- Botão de destaque -->
+    <a href="#cardapio" class="btn">Confira nosso cardápio</a>
+
+    
+</header>
+
+
+    <!-- Sobre -->
+    <!-- Sobre -->
+<section class="sobre" id="sobre" style="text-align:center; padding:50px 20px; max-width:800px; margin:auto;">
+    <h2 style="color:#2e7d32; font-size:2.2rem; margin-bottom:25px;">Sobre Nós</h2>
+    
+    <!-- Imagem centralizada e menor -->
+    <img src="./image/gosto.png" alt="Cozinha Gosto Sim" style="max-width:400px; margin:20px auto; border-radius:15px; display:block;">
+    
+    <!-- Texto centralizado e com espaçamento equilibrado -->
+    <p style="font-size:1.1rem; color:#555; line-height:1.6; margin-top:20px;">
+        No Gosto Sim, oferecemos refeições saudáveis e práticas, preparadas com ingredientes frescos e balanceados. 
+        Nossas marmitas são elaboradas por nutricionista para garantir qualidade, sabor e saúde no seu dia a dia.
+    </p>
+</section>
+
+
+    <!-- Cardápio -->
+    <section id="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <div class="cardapio">
+            <div class="item">
+                <img src="./image/frango.png" alt="Frango com Legumes">
+                <h3>Frango com Legumes</h3>
+                <p>Delicioso frango grelhado com legumes frescos</p>
+                <p>R$ 25,00</p>
+            </div>
+            <div class="item">
+                <img src="./image/quinoa.jpg" alt="Quinoa Vegana">
+                <h3>Quinoa Vegana</h3>
+                <p>Prato nutritivo com quinoa, legumes e temperos naturais</p>
+                <p>R$ 22,00</p>
+            </div>
+            <div class="item">
+                <img src="./image/quinoa.jpg" alt="Sopa Caseira">
+                <h3>Sopa Caseira</h3>
+                <p>Saborosa sopa feita na medida certa para o seu dia</p>
+                <p>R$ 18,00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <div class="depoimentos">
+            <div class="depoimento">"As marmitas são práticas e deliciosas, perfeitas pro meu dia a dia!" – Ana P.</div>
+            <div class="depoimento">"Comida saudável, saborosa e muito prática." – João M.</div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <!-- Contato -->
+<section class="contato">
+    <h2>Contato</h2>
+    <p>📞 WhatsApp: (11) 94472-4244</p>
+    <p>📍 Rua Iquiririm, 320 – São Paulo, SP</p>
+    <p>📸 Instagram: <a href="https://www.instagram.com/gostosimrs" target="_blank">@gostosimrs</a></p>
+    <div style="text-align:center; margin-top:20px;">
+        <a href="https://wa.me/5511944724244" class="btn">Faça seu pedido agora</a>
+    </div>
+</section>
+
+
+    <!-- Rodapé -->
+    <footer>
+        &copy; 2025 Gosto Sim – Marmitas Saudáveis
+    </footer>
+
+</body>
+</html>
+
